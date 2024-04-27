@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .title {
+    @apply text-5xl text-accent text-center font-semibold pb-12;
+  }
+  .haccent {
+    @apply text-3xl text-accent pb-4;
+  }
+}

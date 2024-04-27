@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jem Portfolio</title>
+    <link rel="stylesheet" href="output.css" />
+    <!-- pWA -->
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="icon" href="images/jemuel-logo.png" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="images/jemuel-logo.png" />
+    <meta name="theme-color" content="white" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-title" content="Jem Portfolio" />
+    <meta name="msapplication-TileImage" content="images/logo-ccs-90.png" />
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <nav class="bg-secondary w-full z-10 fixed">
+      <div
+        class="container text-white mx-auto p-3 flex justify-between items-center lg:px-12"
+      >
+        <a href="#hero">
+          <h1 class="text-4xl font-medium">
+            <span class="text-accent">J</span>emuel
+          </h1>
+        </a>
+
+        <ul class="justify-between space-x-8 hidden lg:flex uppercase">
+          <li class="hover:text-accent">
+            <a href="#about">About</a>
+          </li>
+          <li class="hover:text-accent">
+            <a href="#education">Education</a>
+          </li>
+          <li class="hover:text-accent">
+            <a href="#skills"> Fav-Languages</a>
+          </li>
+          <li class="hover:text-accent">
+            <a href="#hobbies">Hobbies</a>
+          </li>
+          <li class="hover:text-accent">
+            <a href="#movies">Fav-Movies</a>
+          </li>
+          <li class="hover:text-accent">
+            <a href="#contacts">Contacts</a>
+          </li>
+        </ul>
+        <div class="block lg:hidden" id="menu">
+          <i class="fa-2x fa fa-bars"></i>
+        </div>
+      </div>
+
+      <div
+        class="bg-tansparent w-full h-full fixed ease-in-out duration-200 left-[100%] md:hidden"
+        id="sidebar"
+      >
+        <ul
+          class="text-white bg-primary w-[60%] absolute right-0 text-xl flex flex-col space-y-4 p-8 items-center shadow-accent shadow-md rounded-bl-md"
+        >
+          <li class="hover:text-accent">
+            <a href="#about" class="">About</a>
+          </li>
+          <div class="h-[1px] bg-gray-500 w-full"></div>
+          <li class="hover:text-accent">
+            <a href="#education">Education</a>
+          </li>
+          <div class="h-[1px] bg-gray-500 w-full"></div>
+          <li class="hover:text-accent">
+            <a href="#skills">Fav-Languages</a>
+          </li>
+          <div class="h-[1px] bg-gray-500 w-full"></div>
+          <li class="hover:text-accent">
+            <a href="#hobbies">Hobbies</a>
+          </li>
+          <div class="h-[1px] bg-gray-500 w-full"></div>
+          <li class="hover:text-accent">
+            <a href="#movies">Fav-Movies</a>
+          </li>
+          <div class="h-[1px] bg-gray-500 w-full"></div>
+          <li class="hover:text-accent">
+            <a href="#contacts">Contacts</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <section id="hero" class="bg-secondary text-white">
+      <div
+        class="container mx-auto py-16 px-4 text-center h-screen grid place-items-center md:grid-cols-2 space-x-20"
+      >
+        <div class="">
+          <p class="text-3xl text-accent">Hello, I'm</p>
+          <h1 class="text-8xl font-bold">Jemuel</h1>
+          <h1 class="text-8xl font-bold pb-4">Salcedo</h1>
+          <p class="text-gray-400 text-3xl pb-4">Future Web Developer</p>
+          <a
+            href="#contacts"
+            class="text-black bg-accent px-16 py-4 rounded-full font-bold shadow-white hover:text-white shadow-md hover:scale-105 ease-in-out duration-200 block mt-8"
+          >
+            Contact Me
+          </a>
+        </div>
+        <img
+          src="images/about.png"
+          alt=""
+          class="hidden md:block border-accent border-2 rounded-tl-3xl rounded-br-3xl size-[400px] object-cover md:justify-items-start md:w-[300px] lg:w-[400px]"
+        />
+      </div>
+    </section>
+    <!-- About me -->
+    <section id="about" class="bg-primary">
+      <div class="container mx-auto px-4 py-16">
+        <h1 class="title">About Me</h1>
+        <div
+          class="grid place-items-center md:grid-cols-2 md:items-center space-x-8"
+        >
+          <img src="images/about.png" alt="" class="pb-12" />
+          <div>
+            <h2 class="text-5xl text-white pb-4">Hi I'm Jemuel Salcedo</h2>
+            <h3 class="text-3xl text-accent pb-4">Developer</h3>
+            <p class="text-gray-400 pb-4 md:text-lg">
+              Results-driven Information Technology student born on November 06,
+              2002, seeking a career in backend development. Proven efficiency
+              and dedication in task completion. Passionate about computers
+              since childhood, currently pursuing a Bachelor of Science in
+              Information Technology. Strong analytical and problem-solving
+              skills, with a focus on continuous improvement.
+            </p>
+            <div class="space-y-4 text-lg">
+              <div class="text-gray-400 flex space-x-16">
+                <p class="w-[100px]">Birthday:</p>
+                <p>Nov-06, 2002</p>
+              </div>
+              <div class="text-gray-400 flex space-x-16">
+                <p class="w-[100px]">Phone:</p>
+                <p>09123456789</p>
+              </div>
+              <div class="text-gray-400 flex space-x-16">
+                <p class="w-[100px]">Residency:</p>
+                <p>Lusacan, Tiaong, Quezon</p>
+              </div>
+              <div class="text-gray-400 flex space-x-16">
+                <p class="w-[100px]">Age:</p>
+                <p>21 years old</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education" class="bg-primary">
+      <div class="py-16 px-4 max-w-[700px] mx-auto">
+        <h1 class="title">Education</h1>
+        <div>
+          <div class="flex space-x-8 pb-4 items-baseline">
+            <i
+              class="text-white fa-3x fa fa-graduation-cap"
+              aria-hidden="true"
+            ></i>
+            <h1 class="text-white text-4xl h-fit font-medium">Education</h1>
+          </div>
+
+          <div>
+            <div
+              id="school"
+              class="flex flex-col space-y-4 border-l-2 pl-8 relative pb-4"
+            >
+              <div
+                class="size-4 rounded-full border-2 absolute left-0 -translate-x-1/2 top-6 bg-gray-800 hover:bg-accent"
+              ></div>
+              <h1 class="haccent py-0">San Isidro Elementary School</h1>
+              <p class="text-gray-400 text-xl">Graduated in 2015</p>
+
+              <p class="text-gray-400">
+                San Isidro Elementary School provided the foundation for
+                lifelong learning, fostering curiosity and instilling core
+                values. It was here that my passion for education first ignited,
+                shaping my academic journey
+              </p>
+            </div>
+            <div
+              id="school"
+              class="flex flex-col space-y-4 border-l-2 pl-8 relative pb-4"
+            >
+              <div
+                class="size-4 rounded-full border-2 absolute left-0 -translate-x-1/2 top-6 bg-gray-800 hover:bg-accent"
+              ></div>
+              <h1 class="haccent py-0">Lusacan National High School</h1>
+              <p class="text-gray-400 text-xl">Graduated in 2019</p>
+
+              <p class="text-gray-400">
+                Lusacan National High School expanded my knowledge, honed my
+                skills, and nurtured personal development. Through a diverse
+                range of subjects and extracurricular activities, I grew
+                academically and personally, preparing for future challenges.
+              </p>
+            </div>
+            <div
+              id="school"
+              class="flex flex-col space-y-4 border-l-2 pl-8 relative pb-4"
+            >
+              <div
+                class="size-4 rounded-full border-2 absolute left-0 -translate-x-1/2 top-6 bg-gray-800 hover:bg-accent"
+              ></div>
+              <h1 class="haccent py-0">Lusacan National High School SHS</h1>
+              <p class="text-gray-400 text-xl">
+                Graduated in 2021 under STEM strand
+              </p>
+
+              <p class="text-gray-400">
+                At Lusacan National High School SHS, specializing in STEM
+                subjects laid the groundwork for my higher education journey.
+                This focused learning environment equipped me with the skills
+                and knowledge necessary for pursuing advanced studies in my
+                chosen field.
+              </p>
+            </div>
+            <div
+              id="school"
+              class="flex flex-col space-y-4 border-l-2 pl-8 relative pb-4"
+            >
+              <div
+                class="size-4 rounded-full border-2 absolute left-0 -translate-x-1/2 top-6 bg-gray-800 hover:bg-accent"
+              ></div>
+              <h1 class="haccent py-0">Laguna State Polytechnic University</h1>
+              <p class="text-gray-400 text-xl">
+                Bachelor of Science in Information Technolog
+              </p>
+
+              <p class="text-gray-400">
+                Currently pursuing a Bachelor of Science in Information
+                Technology at Laguna State Polytechnic University, I am blending
+                theoretical knowledge with practical skills. With an expected
+                graduation in 2025, I look forward to applying my education to
+                make meaningful contributions to the industry.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="bg-primary">
+      <div class="container py-16 px-4 mx-auto">
+        <h1 class="title">Favorite Languages</h1>
+        <div
+          id="skills"
+          class="grid grid-cols-2 gap-4 md:grid-cols-3 md:gap-16"
+        >
+          <div
+            class="border-accent border-1 rounded-xl shadow-lg- shadow-yellow-500 hover:scale-105 bg-secondary p-4 flex flex-col justify-between items-center"
+          >
+            <img src="images/skills/js.png" alt="" class="w-2/3" />
+            <p
+              class="text-white text-center font-bold text-xl tracking-tighterwider"
+            >
+              JAVASCRIPT
+            </p>
+          </div>
+          <div
+            class="border-accent border-1 rounded-xl shadow-lg- shadow-yellow-500 hover:scale-105 bg-secondary p-4 flex flex-col justify-between items-center"
+          >
+            <img src="images/skills/react.png" alt="" class="w-2/3" />
+            <p
+              class="text-white text-center font-bold text-xl tracking-tighterwider"
+            >
+              react
+            </p>
+          </div>
+          <div
+            class="col-span-2 md:col-span-1 border-accent border-1 rounded-xl shadow-lg- shadow-yellow-500 hover:scale-105 bg-secondary p-4 flex flex-col justify-between items-center"
+          >
+            <img src="images/skills/nodejs.png" alt="" class="w-2/3" />
+            <p
+              class="text-white text-center font-bold text-xl tracking-tighterwider"
+            >
+              NODE
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hobbies -->
+    <section class="bg-primary" id="hobbies">
+      <div class="container max-w-[900px] mx-auto py-16 px-4">
+        <h1 class="title">Hobbies</h1>
+        <div id="projects-cont " class="flex justify-center flex-wrap gap-6">
+          <div class="w-[400px] shadow-2xl hover:scale-105">
+            <img src="images/basketball.jpg" alt="" class="w-full" />
+            <p
+              class="text-white text-center pt-4 font-semibold md:text-xl bg-secondary pb-4 rounded-b-lg hover:text-accent"
+            >
+              Basketball
+            </p>
+          </div>
+          <div class="w-[400px] shadow-2xl hover:scale-105">
+            <img src="images/skateboarding.jpg" alt="" class="w-full h-[83%]" />
+            <p
+              class="text-white text-center pt-4 font-semibold md:text-xl bg-secondary pb-4 rounded-b-lg hover:text-accent"
+            >
+              Skateboarding
+            </p>
+          </div>
+          <div class="w-[400px] shadow-2xl hover:scale-105">
+            <img src="images/cycling.jpg" alt="" class="w-full" />
+            <p
+              class="text-white text-center pt-4 font-semibold md:text-xl bg-secondary pb-4 rounded-b-lg hover:text-accent"
+            >
+              Biking
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Movies -->
+    <section class="bg-primary" id="movies">
+      <div class="container max-w-[1000px] mx-auto py-16 px-4">
+        <h1 class="title">Favorite Movies</h1>
+        <div id="projects-cont " class="flex justify-center gap-6 flex-wrap">
+          <div class="shadow-2xl hover:scale-105 size-[300px]">
+            <img src="images/money-heist.jpg" alt="" class="w-full h-full" />
+          </div>
+          <div class="shadow-2xl hover:scale-105 size-[300px]">
+            <img src="images/manifest.jpg" alt="" class="w-full h-full" />
+          </div>
+          <div class="shadow-2xl hover:scale-105 size-[300px]">
+            <img src="images/johnwick.jpg" alt="" class="w-full h-full" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contacts" class="bg-primary">
+      <div class="container md:max-w-[900px] py-16 px-4 mx-auto">
+        <h1 class="title">Contact Me</h1>
+        <div class="grid grid-col-1 md:grid-cols-2 space-y-8">
+          <form
+            action="
+        
+        "
+            class="flex flex-col space-y-4 md:col-span-2"
+          >
+            <input
+              type="text"
+              name=""
+              id=""
+              placeholder="Your Name"
+              class="p-4 rounded-md bg-gray-900 border-gray-500 border-2"
+            />
+            <input
+              type="text"
+              name=""
+              id=""
+              placeholder="Your Email"
+              class="p-4 rounded-md bg-gray-900 border-gray-500 border-2"
+            />
+
+            <textarea
+              name=""
+              id=""
+              cols="30"
+              rows="10"
+              class="bg-secondary text-white p-4"
+              placeholder="Your message"
+            ></textarea>
+          </form>
+          <div>
+            <h1 class="haccent text-white">Contact Information</h1>
+            <div class="flex items-center space-x-8 pb-4">
+              <i class="text-white fa-2x fa fa-envelope" aria-hidden="true"></i>
+              <div>
+                <h1 class="text-2xl text-white">Email</h1>
+                <p class="text-gray-400">salcedojemuel25@gmail.com</p>
+              </div>
+            </div>
+            <div class="flex items-center space-x-8 pb-4">
+              <i class="text-white fa-2x fa fa-phone" aria-hidden="true"></i>
+              <div>
+                <h1 class="text-2xl text-white">Phone</h1>
+                <p class="text-gray-400">09123456789</p>
+              </div>
+            </div>
+            <div class="flex items-center space-x-8 pb-4">
+              <i
+                class="text-white fa-2x fa fa-address-card"
+                aria-hidden="true"
+              ></i>
+              <div>
+                <h1 class="text-2xl text-white">Address</h1>
+                <p class="text-gray-400">Lusacan, Tiaong, Quezon</p>
+              </div>
+            </div>
+          </div>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3872.206272778346!2d121.3422170221897!3d13.94632027578583!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33bd4104fe66d5b3%3A0x9e905ff4dfe4cc5d!2sLa%20Venzuela%E2%80%99s%20Resort!5e0!3m2!1sen!2sph!4v1707726915093!5m2!1sen!2sph"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            class="w-full"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-secondary">
+      <p class="text-gray-400 text-center py-8">
+        © 2024. Created by Jemuel. All rights reserved
+      </p>
+    </footer>
+  </body>
+  <script>
+    const sidebar = document.getElementById("sidebar");
+    const menu = document.getElementById("menu");
+
+    menu.addEventListener("click", () => {
+      if (sidebar.style.left === "100%") {
+        sidebar.style.left = "0";
+      } else {
+        sidebar.style.left = "100%";
+      }
+    });
+
+    sidebar.addEventListener("click", () => {
+      sidebar.style.left = "100%";
+    });
+  </script>
+</html>
